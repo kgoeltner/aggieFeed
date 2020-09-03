@@ -16,6 +16,7 @@
 		145A5D6225000BE600D612DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145A5D6025000BE600D612DE /* LaunchScreen.storyboard */; };
 		145A5D6A25000E8200D612DE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145A5D6925000E8200D612DE /* DetailViewController.swift */; };
 		14F263DD25015D5500B7C55C /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F263DC25015D5500B7C55C /* ActivityCell.swift */; };
+		14F263DF2501611900B7C55C /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F263DE2501611900B7C55C /* DetailCell.swift */; };
 		FA36EEBCE4AD0352830C22E5 /* Pods_AggieFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78DB406C36809BB534C87DD6 /* Pods_AggieFeed.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		145A5D6325000BE600D612DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		145A5D6925000E8200D612DE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		14F263DC25015D5500B7C55C /* ActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
+		14F263DE2501611900B7C55C /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
 		78DB406C36809BB534C87DD6 /* Pods_AggieFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AggieFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE6C355AFCCAB69C2BD96A03 /* Pods-AggieFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AggieFeed.debug.xcconfig"; path = "Target Support Files/Pods-AggieFeed/Pods-AggieFeed.debug.xcconfig"; sourceTree = "<group>"; };
 		D10B08B6FC454973B1C8CE2E /* Pods-AggieFeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AggieFeed.release.xcconfig"; path = "Target Support Files/Pods-AggieFeed/Pods-AggieFeed.release.xcconfig"; sourceTree = "<group>"; };
@@ -81,14 +83,39 @@
 			children = (
 				145A5D5225000BE300D612DE /* AppDelegate.swift */,
 				145A5D5425000BE300D612DE /* SceneDelegate.swift */,
-				145A5D5825000BE300D612DE /* Main.storyboard */,
-				14F263DC25015D5500B7C55C /* ActivityCell.swift */,
-				145A5D5625000BE300D612DE /* MainViewController.swift */,
-				145A5D6925000E8200D612DE /* DetailViewController.swift */,
+				14F263E025016AAE00B7C55C /* Model */,
+				14F263E125016AB900B7C55C /* View */,
+				14F263E225016ABD00B7C55C /* Controller */,
 				145A5D6325000BE600D612DE /* Info.plist */,
 				14031B0B2500670D0029191A /* Supporting Files */,
 			);
 			path = AggieFeed;
+			sourceTree = "<group>";
+		};
+		14F263E025016AAE00B7C55C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				14F263DC25015D5500B7C55C /* ActivityCell.swift */,
+				14F263DE2501611900B7C55C /* DetailCell.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		14F263E125016AB900B7C55C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				145A5D5825000BE300D612DE /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		14F263E225016ABD00B7C55C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				145A5D5625000BE300D612DE /* MainViewController.swift */,
+				145A5D6925000E8200D612DE /* DetailViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		499D3D451924E42A8F39CF55 /* Frameworks */ = {
@@ -228,6 +255,7 @@
 				145A5D6A25000E8200D612DE /* DetailViewController.swift in Sources */,
 				145A5D5525000BE300D612DE /* SceneDelegate.swift in Sources */,
 				14F263DD25015D5500B7C55C /* ActivityCell.swift in Sources */,
+				14F263DF2501611900B7C55C /* DetailCell.swift in Sources */,
 				145A5D5D25000BE300D612DE /* AggieFeed.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

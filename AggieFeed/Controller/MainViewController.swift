@@ -27,6 +27,14 @@ class MainViewController: UITableViewController {
         print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
         performRequest()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.destination as! DetailViewController
+        
+        if let indexPath = tableView.indexPathForSelectedRow {
+            destinationVC.selectedActivity = activitiesCache[indexPath.row]
+        }
+    }
 
     // MARK: Tableview Datasource Methods
     
@@ -40,6 +48,8 @@ class MainViewController: UITableViewController {
         let activity = activitiesCache[indexPath.row]
         
         cell.titleLabel?.text = activity.title
+        cell.titleLabel?.font = UIFont(name:"HelveticaNeue-Bold", size: 16.0)
+
         cell.displayNameLabel?.text = activity.displayName
         
         return cell
@@ -48,10 +58,9 @@ class MainViewController: UITableViewController {
     // MARK: Tableview Delegate Methods
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        /*itemArray[indexPath.row].done = !itemArray[indexPath.row].done
-        
-        saveItems()
-        tableView.deselectRow(at: indexPath, animated: true)*/
+        performSegue(withIdentifier: "goToActivity", sender: self)
+
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     // MARK: REST API Methods
