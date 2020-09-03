@@ -1,0 +1,6 @@
+framework module Pods_AggieFeed {
+  umbrella header "Pods-AggieFeed-umbrella.h"
+
+  export *
+  module * { export * }
+}

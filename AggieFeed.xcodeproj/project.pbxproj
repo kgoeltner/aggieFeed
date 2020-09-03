@@ -3,29 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		145A5D5325000BE300D612DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145A5D5225000BE300D612DE /* AppDelegate.swift */; };
 		145A5D5525000BE300D612DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145A5D5425000BE300D612DE /* SceneDelegate.swift */; };
-		145A5D5725000BE300D612DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145A5D5625000BE300D612DE /* ViewController.swift */; };
+		145A5D5725000BE300D612DE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145A5D5625000BE300D612DE /* MainViewController.swift */; };
 		145A5D5A25000BE300D612DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145A5D5825000BE300D612DE /* Main.storyboard */; };
 		145A5D5D25000BE300D612DE /* AggieFeed.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 145A5D5B25000BE300D612DE /* AggieFeed.xcdatamodeld */; };
 		145A5D5F25000BE600D612DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 145A5D5E25000BE600D612DE /* Assets.xcassets */; };
 		145A5D6225000BE600D612DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145A5D6025000BE600D612DE /* LaunchScreen.storyboard */; };
+		145A5D6A25000E8200D612DE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145A5D6925000E8200D612DE /* DetailViewController.swift */; };
+		14F263DD25015D5500B7C55C /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F263DC25015D5500B7C55C /* ActivityCell.swift */; };
+		FA36EEBCE4AD0352830C22E5 /* Pods_AggieFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78DB406C36809BB534C87DD6 /* Pods_AggieFeed.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		145A5D4F25000BE300D612DE /* AggieFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AggieFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		145A5D5225000BE300D612DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		145A5D5425000BE300D612DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		145A5D5625000BE300D612DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		145A5D5625000BE300D612DE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		145A5D5925000BE300D612DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		145A5D5C25000BE300D612DE /* AggieFeed.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AggieFeed.xcdatamodel; sourceTree = "<group>"; };
 		145A5D5E25000BE600D612DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		145A5D6125000BE600D612DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		145A5D6325000BE600D612DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		145A5D6925000E8200D612DE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		14F263DC25015D5500B7C55C /* ActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
+		78DB406C36809BB534C87DD6 /* Pods_AggieFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AggieFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE6C355AFCCAB69C2BD96A03 /* Pods-AggieFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AggieFeed.debug.xcconfig"; path = "Target Support Files/Pods-AggieFeed/Pods-AggieFeed.debug.xcconfig"; sourceTree = "<group>"; };
+		D10B08B6FC454973B1C8CE2E /* Pods-AggieFeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AggieFeed.release.xcconfig"; path = "Target Support Files/Pods-AggieFeed/Pods-AggieFeed.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +41,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA36EEBCE4AD0352830C22E5 /* Pods_AggieFeed.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14031B0B2500670D0029191A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				145A5D5E25000BE600D612DE /* Assets.xcassets */,
+				145A5D6025000BE600D612DE /* LaunchScreen.storyboard */,
+				145A5D5B25000BE300D612DE /* AggieFeed.xcdatamodeld */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		145A5D4625000BE300D612DE = {
 			isa = PBXGroup;
 			children = (
 				145A5D5125000BE300D612DE /* AggieFeed */,
 				145A5D5025000BE300D612DE /* Products */,
+				A4F570F7336BAF7B8F1D1A00 /* Pods */,
+				499D3D451924E42A8F39CF55 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,14 +81,31 @@
 			children = (
 				145A5D5225000BE300D612DE /* AppDelegate.swift */,
 				145A5D5425000BE300D612DE /* SceneDelegate.swift */,
-				145A5D5625000BE300D612DE /* ViewController.swift */,
 				145A5D5825000BE300D612DE /* Main.storyboard */,
-				145A5D5E25000BE600D612DE /* Assets.xcassets */,
-				145A5D6025000BE600D612DE /* LaunchScreen.storyboard */,
+				14F263DC25015D5500B7C55C /* ActivityCell.swift */,
+				145A5D5625000BE300D612DE /* MainViewController.swift */,
+				145A5D6925000E8200D612DE /* DetailViewController.swift */,
 				145A5D6325000BE600D612DE /* Info.plist */,
-				145A5D5B25000BE300D612DE /* AggieFeed.xcdatamodeld */,
+				14031B0B2500670D0029191A /* Supporting Files */,
 			);
 			path = AggieFeed;
+			sourceTree = "<group>";
+		};
+		499D3D451924E42A8F39CF55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78DB406C36809BB534C87DD6 /* Pods_AggieFeed.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4F570F7336BAF7B8F1D1A00 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE6C355AFCCAB69C2BD96A03 /* Pods-AggieFeed.debug.xcconfig */,
+				D10B08B6FC454973B1C8CE2E /* Pods-AggieFeed.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +115,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 145A5D6625000BE600D612DE /* Build configuration list for PBXNativeTarget "AggieFeed" */;
 			buildPhases = (
+				37E9FC814C9363F206EB83F0 /* [CP] Check Pods Manifest.lock */,
 				145A5D4B25000BE300D612DE /* Sources */,
 				145A5D4C25000BE300D612DE /* Frameworks */,
 				145A5D4D25000BE300D612DE /* Resources */,
+				1FA531792BC1DF1FB4769639 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,14 +176,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1FA531792BC1DF1FB4769639 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AggieFeed/Pods-AggieFeed-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AggieFeed/Pods-AggieFeed-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AggieFeed/Pods-AggieFeed-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37E9FC814C9363F206EB83F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AggieFeed-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		145A5D4B25000BE300D612DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				145A5D5725000BE300D612DE /* ViewController.swift in Sources */,
+				145A5D5725000BE300D612DE /* MainViewController.swift in Sources */,
 				145A5D5325000BE300D612DE /* AppDelegate.swift in Sources */,
+				145A5D6A25000E8200D612DE /* DetailViewController.swift in Sources */,
 				145A5D5525000BE300D612DE /* SceneDelegate.swift in Sources */,
+				14F263DD25015D5500B7C55C /* ActivityCell.swift in Sources */,
 				145A5D5D25000BE300D612DE /* AggieFeed.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +370,7 @@
 		};
 		145A5D6725000BE600D612DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE6C355AFCCAB69C2BD96A03 /* Pods-AggieFeed.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +389,7 @@
 		};
 		145A5D6825000BE600D612DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D10B08B6FC454973B1C8CE2E /* Pods-AggieFeed.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
