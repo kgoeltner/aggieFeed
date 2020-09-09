@@ -80,7 +80,7 @@ class MainViewController: UITableViewController {
                 // SUCCESS parse JSON
                 if let safeData = data {
                     // Remove old cache
-                    self.loadCache()
+                    //self.loadCache()
                     self.deleteCache()
                     
                     self.parseJSON(activityData: safeData)
@@ -135,8 +135,16 @@ class MainViewController: UITableViewController {
     }
     
     func deleteCache() {
-        for activity in activitiesCache {
+        /*for activity in activitiesCache {
             context.delete(activity)
+        }*/
+        let fetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Activity")
+        let request = NSBatchDeleteRequest(fetchRequest: fetch)
+        
+        do {
+            try context.execute(request)
+        } catch {
+            fatalError("Failed to execute request: \(error)")
         }
         
         activitiesCache.removeAll()
